@@ -48,6 +48,8 @@ h2{
 h3{
   text-transform: uppercase;
   font-weight: bold;
+  text-align: left;
+  padding-left: 2%
 }
 q:before,q:after {
     content:'';
@@ -62,6 +64,19 @@ body{
 	font-family: arial,helvetica;
 	color: #333;
 	color: rgba(0,0,0,0.5);
+}
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 .wrap{
 	margin-left: auto;
@@ -283,8 +298,8 @@ border-bottom: 2px solid white;
   padding: 0 5%;
   width:65%;
   display: block;
-  margin-left: auto;
-  margin-right:auto;
+  margin-left: 10%;
+  float:left;
 }
 #myVideo{
   position: absolute;
@@ -364,9 +379,11 @@ video::-webkit-media-controls {
   display: inline-block;
   font-size: 14px;
   box-shadow: 0 5px 9px 0 black, 0 5px 9px 0 black;
+  margin-right: auto;
+  margin-left: auto;
 }
 .button:hover{
-
+background: rgba(255, 255, 255, 0.2);;
 }
 .button a{color:white;}
 /*About*/
@@ -462,7 +479,7 @@ This class makes the topnav look good on small screens (display the links vertic
   .topnav.responsive .dropdown .dropbtn {
     display: block;
     width: 100%;
-    text-align: left;
+    text-align: right;
   }
   /*
   #menu {
