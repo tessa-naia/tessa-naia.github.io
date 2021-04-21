@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Tess Hudson Portfolio</title>
+  <meta name="author" content="Tess Hudson" />
+  <meta name="description" content="Personal Portfolio site. 3D artist and web developer." />
+  <meta name="keywords" content="Portfolio, 3D, 3D modelling, Game development, Web development, Technical Artist" />
+  <meta name="geo.placename" content="">
+  <meta name="Resource-type" content="Document" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="../dist/fullpage.css" />
+  <link rel="stylesheet" type="text/css" href="examples.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+  <script>
+  $(window).on("load",function(){
+     $(".loader-wrapper").fadeOut("slow");
+});
+</script>
+
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active"><img src="imgs/Logo.png" style="height:40px;"></a>
+    <a href="#section1">About</a>
+    <div class="dropdown">
+      <button class="dropbtn">Portfolio
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#section2">3D Production</a>
+        <a href="#section7">Web</a>
+        <a href="#section8">2D Animation</a>
+        <a href="#section9">HackConcordia</a>
+      </div>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      &#9776;
+    </a>
+  </div>
+
+  <!--
+<select id="demosMenu">
+  <option selected>Choose Demo</option>
+  <option id="jquery-adapter">jQuery adapter</option>
+  <option id="active-slide">Active section and slide</option>
+  <option id="auto-height">Auto height</option>
+  <option id="autoplay-video-and-audio">Autoplay Video and Audio</option>
+  <option id="backgrounds">Background images</option>
+  <option id="backgrounds-fixed">Fixed fullscreen backgrounds</option>
+  <option id="background-video">Background video</option>
+  <option id="callbacks-v2-compatible">Callbacks version 2</option>
+  <option id="callbacks-v3">Callbacks version 3</option>
+  <option id="continuous-horizontal">Continuous horizontal</option>
+  <option id="continuous-vertical">Continuous vertical</option>
+  <option id="parallax">Parallax</option>
+  <option id="css3">CSS3</option>
+  <option id="drag-and-move">Drag And Move</option>
+  <option id="easing">Easing</option>
+  <option id="fading-effect">Fading Effect</option>
+  <option id="fixed-headers">Fixed headers</option>
+  <option id="gradient-backgrounds">Gradient backgrounds</option>
+  <option id="interlocked-slides">Interlocked Slides</option>
+  <option id="looping">Looping</option>
+  <option id="methods">Methods</option>
+  <option id="navigation-vertical">Vertical navigation dots</option>
+  <option id="navigation-horizontal">Horizontal navigation dots</option>
+  <option id="navigation-tooltips">Navigation tooltips</option>
+  <option id="no-anchor">No anchor links</option>
+  <option id="normal-scroll">Normal scrolling</option>
+  <option id="normalScrollElements">Normal scroll elements</option>
+  <option id="offset-sections">Offset sections</option>
+  <option id="one-section">One single section</option>
+  <option id="reset-sliders">Reset sliders</option>
+  <option id="responsive-auto-height">Responsive Auto Height</option>
+  <option id="responsive-height">Responsive Height</option>
+  <option id="responsive-width">Responsive Width</option>
+  <option id="responsive-slides">Responsive Slides</option>
+  <option id="scrollBar">Scroll bar enabled</option>
+  <option id="scroll-horizontally">Scroll horizontally</option>
+  <option id="scrollOverflow">Scroll inside sections and slides</option>
+  <option id="scrollOverflow-reset">ScrollOverflow Reset</option>
+  <option id="lazy-load">Lazy load</option>
+  <option id="scrolling-speed">Scrolling speed</option>
+  <option id="trigger-animations">Trigger animations</option>
+  <option id="vue-fullpage">Vue-fullpage component</option>
+</select>
+-->
+  <div id="fullpage">
+    <!--Landing Page-->
+    <div class="section" id="home">
+      <div class="intro">
+        <video id="myVideo" loop muted data-autoplay>
+          <source src="imgs/DemoReel.mp4" type="video/mp4">
+        </video>
+
+      </div>
+    </div>
+    <!--About-->
+    <div class="section" id="section1">
+      <img src="imgs/About.jpg" style="width:18%; border-radius:50%; margin-top:1em;">
+      <div class="text_block" style="width:75%">
+        <h2 id="AboutTitle">Tess Hudson</h2>
+        <hr style="color:white;">
+        <p id="AboutText">
+          Hi! I’m a 3D artist currently based in Montreal, with a variety of experience in web development as well as 2D design. I am graduating in 2022 with a bachelor’s degree in Computer Science with Computation Arts. I have worked as a graphic
+          designer as well as a web developer and have enjoyed connecting with people in those teams. I am currently competing in the 2021 Ubisoft Game Lab building character and environment models. What I am most importantly interested in is world
+          building whether that be in the realm of film, games, or new technology.<br><br>
+          <b>Software</b>Jira, Blender and Adobe Photoshop, Illustrator, Premiere, After Effects<br>
+          <b>Programming Languages</b> C++/C, Html/CSS/JavaScript, PHP, Java<br>
+          <b>Databases</b> SQLite
+          <b>Libraries</b> OpenGL
+        </p>
+        <br>
+        <a href="imgs/Resume.pdf" style="padding: 5px; text-transform:uppercase; color: #f7f7f7; font-weight: 900;">Resume</a> <br><br>
+        <a href="mailto:tess@hudsonsathome.com" style="padding: 10px; text-transform:uppercase; color: #f7f7f7; font-weight: 900;">tess@hudsonsathome.com</a> <br><br>
+        <a href="https://www.linkedin.com/in/tess-hudson-9996a7195/"><i aria-hidden="true"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin-circled--v1.png" /></i></a>
+
+      </div>
+    </div>
+    <!--Game-->
+    <div class="section" id="section2" style="background-color: #000000;">
+      <div class="slide" id="slide1" data-anchor="slide1">
+        <div class="intro">
+          <img src="imgs/Render2.png" style="width:75%;">
+        </div>
+        <div class="overlay">
+          <h3>Mystic Bond</h3>
+          <button class="button" style="float:left; margin: 0; "><a href="https://mikesilva13.itch.io/mystic-bond">Play Here</a></button>
+          <div class="overlay_row">
+          <p>This cooperative puzzle game was built for the 2021 Ubisoft Game Lab with the theme Together/Apart.
+          </p>
+        </div>
+        <div class="overlay_row">
+          <div class="overlay_column_title">
+            <p>Collaborators</p>
+          </div>
+          <div class="overlay_column_body">
+            <p>Anthony, Claudia, Eugene, Hazel, Maddi H, Micheal S. and Samuel</p>
+          </div>
+        </div>
+        <div class="overlay_row">
+          <div class="overlay_column_title">
+            <p>Mentors</p>
+          </div>
+          <div class="overlay_column_body">
+            <p>Olivier, Alex G. and Manuel F.</p>
+          </div>
+        </div>
+          <div class="overlay_row">
+            <div class="overlay_column_title">
+              <p>Technologies</p>
+            </div>
+            <div class="overlay_column_body">
+              <p>Blender, Unity Game Engine, Adobe Photoshop</p>
+            </div>
+          </div>
+        </div>
+        <!--Overlay End-->
+      </div>
+      <div class="slide" id="slide2" data-anchor="slide2">
+        <div class="row" style="width:85%; padding-top:0; ">
+          <div class="column">
+            <img src="imgs/logo_colour.png" alt="" style="width:30%">
+          </div>
+          <div class="column">
+            <img src="imgs/NavTable.png" alt="" style="width:100%">
+          </div>
+        </div>
+        <div class="row" style="width:85%; padding-top:0; ">
+          <div class="column">
+            <img src="imgs/MouseHole.PNGg" alt="" style="width:30%">
+          </div>
+          <div class="column">
+            <img src="imgs/GameeStudyMockup.png" alt="" style="width:100%">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Lipsync-->
+    <div class="section" id="section3" style="background-color: black;">
+
+      <div class="slide" id="slide1" data-anchor="slide1">
+        <div class="intro">
+          <video controls autoplay muted loop style="width:100%;">
+            <source src="imgs/TessaH_Face_Animation.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="overlay">
+          <h3>Lipsync Animation</h3>
+          <p>This animation takes an elderly man’s face inspired by the concept art by Roman Semenenko to animate as it is a more interesting textural and visual basis
+            for lip syncing. Sculpting was used to create organic models and simplifying that sculpt in order to animate.used the fundamentals of lip-syncing animation
+            to a fast-paced, very wacky audio clip by Matthew Mercer audio clip. The texturing was done inside Blender on the model. I believed it was important to keep
+            the sketched lookof the concept art on the beard while still having skin texture bump maps on the face as well as subsurface scattering.</p>
+          <div class="overlay_row">
+            <div class="overlay_column_title">
+              <p>Technologies</p>
+            </div>
+            <div class="overlay_column_body">
+              <p>Sculpted, textured and animated in Blender</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" id="slide2" data-anchor="slide2">
+        <div class="row" style="width:85%; padding-top:0; ">
+          <div class="column">
+            <img src="imgs/head-reference_orig.jpg" alt="" style="width:40%">
+          </div>
+          <div class="column">
+            <img src="imgs/facewireframe1.png" alt="" style="width:100%">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--Pulmonem-->
+    <div class="section" id="section4" style="background-color:#191919;">
+      <div class="intro">
+        <video controls autoplay muted loop style="width:100%;">
+          <source src="imgs/Cart411_Video_1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="overlay">
+        <h3>Pulmonem</h3>
+        <button class="button" style="float:left; margin: 0; "><a href="#">See More</a></button>
+        <div class="overlay_row">
+        <p>Pulmonem imagines a world in which the pollution of the air has become so toxic that a underground organization needs to develop an external lung in order to survive. </p>
+      </div>
+      <div class="overlay_row">
+        <div class="overlay_column_title">
+          <p>Collaborators</p>
+        </div>
+        <div class="overlay_column_body">
+          <p>Abby Schafer (AR in Lens Studio), Elsa Donovan (Procedural Nodes in Houdini), Lina Kretzschmar (Web Development)</p>
+        </div>
+      </div>
+        <div class="overlay_row">
+          <div class="overlay_column_title">
+            <p>Technologies</p>
+          </div>
+          <div class="overlay_column_body">
+            <p>Blender, HTML/CSS, Houdini, Lens Studio, Adobe Photoshop and Premiere</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--LowPoly-->
+    <div class="section" id="section5" style="background-color:#474747;">
+
+      <div class="slide" id="slide1" data-anchor="slide1">
+        <div class="row">
+          <img src="imgs/teamstalagmite-render-left_orig.png" style="width:60%; margin:auto; padding-bottom:0;">
+        </div>
+        <div class="row" style="padding-top:0; ">
+          <div class="column">
+            <img src="imgs/sketch_square.jpg" alt="" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="imgs/diorama-concept-art-tess_square.png" alt="" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="imgs/wireframe_diorama_square.png" alt="" style="width:100%">
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" id="slide2" data-anchor="slide2">
+        <div class="text_block">
+          <h3>LOW POLY ENVIRONMENT</h3>
+          <p>
+            2018<br>
+            Collaborative Project with Charles Rabbat. <br>
+            A 3D modelled environment of a science-fiction futuristic city built inside a mountain made from a stone giant’s head. This model is a fantasy environment which shows the ability of simple low poly environments to deliver a convincing 3D
+            environment. As many environments are designed mainly as a backdrop for a game, it is important to consider that an evocative background is often paramount for setting the scene in any endeavour, be it animation or gaming. Low poly
+            environments carefully drawn can convey much and be the basis from which any other storytelling can spring. <br>
+            Technologies: Blender, Adobe Photoshop
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Monster-->
+    <div class="section" id="section6">
+      <div class="slide" id="slide1" data-anchor="slide1">
+        <video controls autoplay muted loop style="width:100%; margin: auto;">
+          <source src="imgs/TessaH_Monster_ANI.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="overlay">
+        <h3>Monster</h3>
+        <p> This organic model showcases my skill in realistic texturing and rigging. This creature’s textures are a combination of frogs, bats, deer, rhinos and geckos, blended together using texture, specular and bump maps. The model was rigged in
+        Blender with a fly cycle with attention to realism and with extra animations like blinking to give the model even more life. This model was lit using environment lighting and an HDR image so that you can see the reflection of the
+        environment in the eye as well as the light bounce off the monster’s skin especially under the wings.</p>
+        <div class="overlay_row">
+          <div class="overlay_column_title">
+            <p>Technologies</p>
+          </div>
+          <div class="overlay_column_body">
+            <p>Blender, Adobe Photoshop</p>
+          </div>
+        </div>
+      </div>
+      <div class="slide" id="slide2" data-anchor="slide2">
+        <div class="row" style="width:70%;">
+          <div class="column">
+            <img src="imgs/tessah-monster-advlighting-17_orig.png" alt="" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="imgs/wireframe_monster_02.png" alt="" style="width:100%">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="section7" style="background-color:#5d5d5d;">
+      <div class="intro">
+        <img src="imgs/WorldArtificerMockup.png" style="width:80%; float:right;">
+      </div>
+      <div class="overlay">
+        <h3>World Artificer</h3>
+        <button class="button" style="float:left; margin: 0; "><a href="https://hybrid.concordia.ca/T_HUDSON/FinalProjectLogin/PHPScripts/ajaxRegisterUser.php">See More</a></button>
+        <div class="overlay_row">
+        <p>This world building web tool allows the user to explore consequences of their world building choices. It seeks to inspire the user to see the interconnected
+        consequences of certain aspects of their design and thus produce more robust and out of the box settings. It includes three main pages. Including the user’s galaxy,
+        where they can view their database of planets, the explore page where the user can view worlds created by others and the design page in which the user can customize a planet and have those options appear visually.
+        </p>
+      </div>
+        <div class="overlay_row">
+          <div class="overlay_column_title">
+            <p>Technologies</p>
+          </div>
+          <div class="overlay_column_body">
+            <p>The front-end was built with HTML, CSS, and JavaScript. Backend connected using PHP and a MySQL database.
+            Assets were made in Adobe Illustrator or hand drawn in Adobe Photoshop.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Found in time-->
+    <div class="section" id="section8">
+      <div class="slide" id="slide1" data-anchor="slide1">
+        <div class="intro">
+          <video controls autoplay muted loop style="width:100%;">
+            <source src="imgs/TessaH_SelfDirected.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="overlay">
+          <h3>FOUND IN TIME - 2D ANIMATION</h3>
+          <div class="overlay_row">
+          <p>Self-Directed 2D film animation project inspired by the theme found in time. I aimed to create a feeling of nostalgia by hand drawing the walk and
+          fly cycle of the paper bag character as well as creating the backgrounds out of craft paper and adding textured layers to give the illusion of age.
+          The sound was designed to add to the nostalgic effect with a gentle jazz tune and clips of crumpling paper, leaves and footsteps.</p>
+        </div>
+          <div class="overlay_row">
+            <div class="overlay_column_title">
+              <p>Technologies</p>
+            </div>
+            <div class="overlay_column_body">
+              <p>Adobe After Effects, Premiere and Photoshop</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="section" id="section9">
+      <h2>HackConcordia | Director of Design</h2>
+      <div class="row" style="width:80%">
+        <div class="column">
+          <img src="imgs/pressstart-graphic-01_orig.png" alt="" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="imgs/619806344_orig.jpg" alt="" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="imgs/enamelpinmockup.png" alt="" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="imgs/2Colour_Tee_MockUp.png" alt="" style="width:100%">
+        </div>
+      </div>
+      <div style="margin:auto;">
+        <button style="margin: 0 4px;" class="button"><a href="https://www.instagram.com/conuhacks">@conuhacks</a></button>
+        <button style="margin: 0 4px;" class="button"><a href="https://www.instagram.com/hackconcordia">@HackConcordia</a></button>
+      </div>
+      <div class="text_block">
+        <p>
+          2019-2020<br>
+          Client Work for the HackConcordia association in collaboration with Abby Schafer on the Design team and the rest of the HackConcordia Executive Team.<br>
+          As Director of Design on the HackConcordia Executive team I was responsible for design, branding and the smooth organization of Concordia’s hackathon ConUHacks.
+          The organization had two social media presences; we developed a sleeker design for the HackConcordia social media that could be carried on in future years. Whereas the ConUHacks social media followed the retro gaming design we developed for
+          the event.
+          Worked with the tech team to create assets for the event website following the 8-bit theme of the event. I worked to coordinate the look and feel of the overall project which required constant communication between the various people
+          coordinating design.
+          Designed pamphlets, event lanyards and swag items for participants and sponsors such as t-shirts and enamel pins.
+          <br><b>Technologies</b> Adobe Illustrator and Photoshop
+
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="social-footer">
+    <div class="social-footer-left">
+
+    </div>
+    <div class="social-footer-icons">
+      <ul class="menu-simple">
+        <li><a href="mailto:tess@hudsonsathome.com"><i class="fa fa-gmail" aria-hidden="false"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/email-sign.png" /></i></a></li>
+        <li><a href="https://www.linkedin.com/in/tess-hudson-9996a7195/"><i aria-hidden="true"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin-circled--v1.png" /></i></a></li>
+        <li><a href="https://github.com/tessa-naia"><i aria-hidden="true"></i><img src="https://img.icons8.com/ios-glyphs/30/ffffff/github.png" /></a></li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <script type="text/javascript" src="../dist/fullpage.js"></script>
+  <script type="text/javascript" src="examples.js"></script>
+  <script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+      anchors: ['firstPage', 'secondPage', '3rdPage'],
+      navigation: true,
+      navigationTooltips: [],
+      showActiveTooltip: true,
+      menu: '#menu'
+    });
+  </script>
+
+</body>
+
+</html>
