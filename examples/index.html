@@ -36,45 +36,32 @@
 </head>
 
 <body>
-
-  <!--
-  <ul id="menu">
-    <img src="imgs/logo.png">
-    <div style="float:right; padding-right:2%;">
-      <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
-      <li data-menuanchor="secondPage"><a href="#secondPage">About</a></li>
-      <li data-menuanchor="3rdPage">
-        <div class="dropdown">
-          <a class="dropbtn">Portfolio
-            <i class="fa fa-caret-down"></i>
-          </a>
-          <div class="dropdown-content">
-            <a href="#section2">3D Production & Games</a>
-            <a href="#section7">Web</a>
-            <a href="#section8">2D Animation</a>
-            <a href="#section9">HackConcordia</a>
-          </div>
-      </li>
-      <div>
-  </ul>-->
+  <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+  <script>
+  $(window).on("load",function(){
+     $(".loader-wrapper").fadeOut("slow");
+});
+</script>
 
   <div class="topnav" id="myTopnav">
-      <a href="#section0" class="active">Home</a>
-      <a href="#section1">About</a>
-      <div class="dropdown">
-        <button class="dropbtn">Portfolio
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="#section3">3D Production</a>
-          <a href="#section7">Web</a>
-          <a href="#section8">2D Animation</a>
-          <a href="#section9">HackConcordia</a>
-        </div>
+    <a href="#home" class="active"><img src="imgs/Logo.png" style="height:40px;"></a>
+    <a href="#section1">About</a>
+    <div class="dropdown">
+      <button class="dropbtn">Portfolio
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#section2">3D Production</a>
+        <a href="#section7">Web</a>
+        <a href="#section8">2D Animation</a>
+        <a href="#section9">HackConcordia</a>
       </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      &#9776;
+    </a>
   </div>
 
   <!--
@@ -126,7 +113,7 @@
 -->
   <div id="fullpage">
     <!--Landing Page-->
-    <div class="section" id="section0">
+    <div class="section" id="home">
       <div class="intro">
         <video id="myVideo" loop muted data-autoplay>
           <source src="imgs/DemoReel.mp4" type="video/mp4">
@@ -139,58 +126,109 @@
       <img src="imgs/About.jpg" style="width:18%; border-radius:50%; margin-top:1em;">
       <div class="text_block" style="width:75%">
         <h2 id="AboutTitle">Tess Hudson</h2>
-        <hr>
+        <hr style="color:white;">
         <p id="AboutText">
           Hi! I’m a 3D artist currently based in Montreal, with a variety of experience in web development as well as 2D design. I am graduating in 2022 with a bachelor’s degree in Computer Science with Computation Arts. I have worked as a graphic
           designer as well as a web developer and have enjoyed connecting with people in those teams. I am currently competing in the 2021 Ubisoft Game Lab building character and environment models. What I am most importantly interested in is world
           building whether that be in the realm of film, games, or new technology.<br><br>
-          <b>Software</b> MS Office, Jira, Blender and Adobe Photoshop, Illustrator, Premiere, After Effects<br>
-          <b>Programming Languages</b> C++/C, Html/CSS/JavaScript, PHP, Java, Ruby, Prolog, LISP<br>
+          <b>Software</b>Jira, Blender and Adobe Photoshop, Illustrator, Premiere, After Effects<br>
+          <b>Programming Languages</b> C++/C, Html/CSS/JavaScript, PHP, Java<br>
           <b>Databases</b> SQLite
           <b>Libraries</b> OpenGL
         </p>
         <br>
         <a href="imgs/Resume.pdf" style="padding: 5px; text-transform:uppercase; color: #f7f7f7; font-weight: 900;">Resume</a> <br><br>
         <a href="mailto:tess@hudsonsathome.com" style="padding: 10px; text-transform:uppercase; color: #f7f7f7; font-weight: 900;">tess@hudsonsathome.com</a> <br><br>
-        <a href="https://www.linkedin.com/in/tess-hudson-9996a7195/"><i class="fa fa-linkedin" aria-hidden="true"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin-circled--v1.png" /></i></a>
+        <a href="https://www.linkedin.com/in/tess-hudson-9996a7195/"><i aria-hidden="true"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin-circled--v1.png" /></i></a>
 
       </div>
     </div>
     <!--Game-->
     <div class="section" id="section2" style="background-color: #000000;">
       <div class="slide" id="slide1" data-anchor="slide1">
-        <div class="intro" style="position:relative;">
-          <img src="imgs/VisualDeliverable.png" class="slide_background"style="width:75%;">
+        <div class="intro">
+          <img src="imgs/Render2.png" style="width:75%;">
         </div>
-        <div class="overlay" style="position:absolute; top:70%; left:5%; z-index:1; width:50%; display:bock;">
+        <div class="overlay">
           <h3>Mystic Bond</h3>
           <button class="button" style="float:left; margin: 0; "><a href="https://mikesilva13.itch.io/mystic-bond">Play Here</a></button>
-          <h4>2021</h4>
+          <div class="overlay_row">
+          <p>This cooperative puzzle game was built for the 2021 Ubisoft Game Lab with the theme Together/Apart.
+          </p>
         </div>
+        <div class="overlay_row">
+          <div class="overlay_column_title">
+            <p>Collaborators</p>
+          </div>
+          <div class="overlay_column_body">
+            <p>Anthony, Claudia, Eugene, Hazel, Maddi H, Micheal S. and Samuel</p>
+          </div>
+        </div>
+        <div class="overlay_row">
+          <div class="overlay_column_title">
+            <p>Mentors</p>
+          </div>
+          <div class="overlay_column_body">
+            <p>Olivier, Alex G. and Manuel F.</p>
+          </div>
+        </div>
+          <div class="overlay_row">
+            <div class="overlay_column_title">
+              <p>Technologies</p>
+            </div>
+            <div class="overlay_column_body">
+              <p>Blender, Unity Game Engine, Adobe Photoshop</p>
+            </div>
+          </div>
+        </div>
+        <!--Overlay End-->
       </div>
       <div class="slide" id="slide2" data-anchor="slide2">
-        <div class="text_block">
-          <h3>MYSTIC BOND</h3>
-          <p>
-            2021<br>
-            This cooperative puzzle game was built for the 2021 Ubisoft Game Lab with the theme Together/Apart. <br>
-            In collaboration with: Anthony, Claudia, Eugene, Hazel, Maddi H, Micheal S. and Samuel<br>
-            Mentorship: Olivier, Alex G. and Manuel F. <br>
-            Technologies: Blender, Unity Game Engine, Adobe Photoshop
-          </p>
+        <div class="row" style="width:85%; padding-top:0; ">
+          <div class="column">
+            <img src="imgs/logo_colour.png" alt="" style="width:30%">
+          </div>
+          <div class="column">
+            <img src="imgs/NavTable.png" alt="" style="width:100%">
+          </div>
+        </div>
+        <div class="row" style="width:85%; padding-top:0; ">
+          <div class="column">
+            <img src="imgs/MouseHole.PNGg" alt="" style="width:30%">
+          </div>
+          <div class="column">
+            <img src="imgs/GameeStudyMockup.png" alt="" style="width:100%">
+          </div>
         </div>
       </div>
     </div>
     <!--Lipsync-->
     <div class="section" id="section3" style="background-color: black;">
+
       <div class="slide" id="slide1" data-anchor="slide1">
         <div class="intro">
-          <video controls autoplay muted loop style="width:85%;">
+          <video controls autoplay muted loop style="width:100%;">
             <source src="imgs/TessaH_Face_Animation.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
+        <div class="overlay">
+          <h3>Lipsync Animation</h3>
+          <p>This animation takes an elderly man’s face inspired by the concept art by Roman Semenenko to animate as it is a more interesting textural and visual basis
+            for lip syncing. Sculpting was used to create organic models and simplifying that sculpt in order to animate.used the fundamentals of lip-syncing animation
+            to a fast-paced, very wacky audio clip by Matthew Mercer audio clip. The texturing was done inside Blender on the model. I believed it was important to keep
+            the sketched lookof the concept art on the beard while still having skin texture bump maps on the face as well as subsurface scattering.</p>
+          <div class="overlay_row">
+            <div class="overlay_column_title">
+              <p>Technologies</p>
+            </div>
+            <div class="overlay_column_body">
+              <p>Sculpted, textured and animated in Blender</p>
+            </div>
+          </div>
+        </div>
       </div>
+
       <div class="slide" id="slide2" data-anchor="slide2">
         <div class="row" style="width:85%; padding-top:0; ">
           <div class="column">
@@ -200,31 +238,40 @@
             <img src="imgs/facewireframe1.png" alt="" style="width:100%">
           </div>
         </div>
-        <div class="text_block">
-          <h3>LIPSYNC ANIMATION</h3>
-          <p>
-            2020<br>
-            Personal Project<br>
-            This animation takes an elderly man’s face inspired by the concept art by Roman Semenenko to animate as it is a more interesting textural and visual basis for lip syncing. In this project I learned the use of sculpting to create organic
-            models and simplifying that sculpt in order to animate. I used the fundamentals of lip-syncing animation to a fast-paced audio clip. The fast paced, very wacky audio clip by Matthew Mercer, I believe was the correct choice for this
-            strange, one toothed man.The texturing was done inside Blender on the model. I believed it was important to keep the sketched look of the concept art on the beard while still having skin texture bump maps on the face as well as sub
-            surface scattering.
-            <br>Technologies: Sculpted, textured and animated in Blender.
-          </p>
-        </div>
       </div>
 
     </div>
     <!--Pulmonem-->
-    <div class="section" id="section4">
-      <h2>Pulmonem</h2>
+    <div class="section" id="section4" style="background-color:#191919;">
       <div class="intro">
-        <video controls autoplay muted loop style="width:85%;">
+        <video controls autoplay muted loop style="width:100%;">
           <source src="imgs/Cart411_Video_1.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
-      <button href="#" class="button">See More</button>
+      <div class="overlay">
+        <h3>Pulmonem</h3>
+        <button class="button" style="float:left; margin: 0; "><a href="#">See More</a></button>
+        <div class="overlay_row">
+        <p>Pulmonem imagines a world in which the pollution of the air has become so toxic that a underground organization needs to develop an external lung in order to survive. </p>
+      </div>
+      <div class="overlay_row">
+        <div class="overlay_column_title">
+          <p>Collaborators</p>
+        </div>
+        <div class="overlay_column_body">
+          <p>Abby Schafer (AR in Lens Studio), Elsa Donovan (Procedural Nodes in Houdini), Lina Kretzschmar (Web Development)</p>
+        </div>
+      </div>
+        <div class="overlay_row">
+          <div class="overlay_column_title">
+            <p>Technologies</p>
+          </div>
+          <div class="overlay_column_body">
+            <p>Blender, HTML/CSS, Houdini, Lens Studio, Adobe Photoshop and Premiere</p>
+          </div>
+        </div>
+      </div>
     </div>
     <!--LowPoly-->
     <div class="section" id="section5" style="background-color:#474747;">
@@ -263,10 +310,24 @@
     <!--Monster-->
     <div class="section" id="section6">
       <div class="slide" id="slide1" data-anchor="slide1">
-        <video controls autoplay muted loop style="width:75%; margin: auto;">
+        <video controls autoplay muted loop style="width:100%; margin: auto;">
           <source src="imgs/TessaH_Monster_ANI.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
+      </div>
+      <div class="overlay">
+        <h3>Monster</h3>
+        <p> This organic model showcases my skill in realistic texturing and rigging. This creature’s textures are a combination of frogs, bats, deer, rhinos and geckos, blended together using texture, specular and bump maps. The model was rigged in
+        Blender with a fly cycle with attention to realism and with extra animations like blinking to give the model even more life. This model was lit using environment lighting and an HDR image so that you can see the reflection of the
+        environment in the eye as well as the light bounce off the monster’s skin especially under the wings.</p>
+        <div class="overlay_row">
+          <div class="overlay_column_title">
+            <p>Technologies</p>
+          </div>
+          <div class="overlay_column_body">
+            <p>Blender, Adobe Photoshop</p>
+          </div>
+        </div>
       </div>
       <div class="slide" id="slide2" data-anchor="slide2">
         <div class="row" style="width:70%;">
@@ -277,70 +338,61 @@
             <img src="imgs/wireframe_monster_02.png" alt="" style="width:100%">
           </div>
         </div>
-        <div class="text_block">
-          <h3>MONSTER</h3>
-          <p>
-            2018 <br> Coursework. <br>
-            This organic model showcases my skill in realistic texturing and rigging. This creature’s textures are a combination of frogs, bats, deer, rhinos and geckos, blended together using texture, specular and bump maps. The model was rigged in
-            Blender with a fly cycle with attention to realism and with extra animations like blinking to give the model even more life. This model was lit using environment lighting and an HDR image so that you can see the reflection of the
-            environment in the eye as well as the light bounce off the monster’s skin especially under the wings.<br>
-            <b>Technologies</b> Blender, Adobe Photoshop
-          </p>
-        </div>
       </div>
     </div>
 
-    <div class="section" id="section7">
-      <h2>World Artificer<br></h2>
-      <div class="row" style="width:80%">
-        <div class="column">
-          <img src="imgs/login1.png" alt="" style="width:100%">
-        </div>
-        <div class="column">
-          <img src="imgs/world-artificer.png" alt="" style="width:100%">
-        </div>
+    <div class="section" id="section7" style="background-color:#5d5d5d;">
+      <div class="intro">
+        <img src="imgs/WorldArtificerMockup.png" style="width:80%; float:right;">
       </div>
-      <div class="text_block">
-        <p>
-          2019<br>
-          Personal Project<br>
-          This world building web tool allows the user to explore consequences of their world building choices, such as government, climate, wildlife,
-          and population. It seeks to inspire the user to see the interconnected consequences of certain aspects of their design and thus produce more robust
-          and out of the box settings. It includes 3 main pages. Including the user’s galaxy, where they can view their database of planets, the explore page
-          where the user can view worlds created by others and the design page. The design page is highly interactive where the user can choose aspects of their
-          world including government, climate, wildlife and population and they will appear as visuals in the site. Some of these variables are customizable:
-          the user can upload their own image for the climate and write their own story. The consequences of the choices they make in the design page until they
-          save and view their planet in their galaxy. <br>
-          <b>Technologies</b> The front-end was built with HTML, CSS, and JavaScript. Backend connected using PHP and a MySQL database.
-          Assets were made in Adobe Illustrator or hand drawn in Adobe Photoshop.
+      <div class="overlay">
+        <h3>World Artificer</h3>
+        <button class="button" style="float:left; margin: 0; "><a href="https://hybrid.concordia.ca/T_HUDSON/FinalProjectLogin/PHPScripts/ajaxRegisterUser.php">See More</a></button>
+        <div class="overlay_row">
+        <p>This world building web tool allows the user to explore consequences of their world building choices. It seeks to inspire the user to see the interconnected
+        consequences of certain aspects of their design and thus produce more robust and out of the box settings. It includes three main pages. Including the user’s galaxy,
+        where they can view their database of planets, the explore page where the user can view worlds created by others and the design page in which the user can customize a planet and have those options appear visually.
         </p>
       </div>
-      <!--<a href="https://hybrid.concordia.ca/T_HUDSON/FinalProjectLogin/PHPScripts/ajaxRegisterUser.php"><button class="button">See More</button></a>-->
-    </div>
-
-    <div class="section" id="section8">
-      <div class="slide" id="slide1" data-anchor="slide1">
-        <h2>Found in Time - 2D Animation</h2>
-        <br>
-        <video controls autoplay muted loop style="width:75%;">
-          <source src="imgs/TessaH_SelfDirected.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="slide" id="slide2" data-anchor="slide2">
-        <div class="text_block">
-          <h3>FOUND IN TIME - 2D ANIMATION</h3>
-          <p>
-            2019 <br>
-            Personal Project <br>
-            Self-Directed 2D film animation project inspired by the theme found in time. I aimed to create a feeling of nostalgia by hand drawing the walk and
-            fly cycle of the paper bag character as well as creating the backgrounds out of craft paper and adding textured layers to give the illusion of age.
-            The sound was designed to add to the nostalgic effect with a gentle jazz tune and clips of crumpling paper, leaves and footsteps.
-            <br> <b>Technologies</b> Adobe After Effects, Premiere and Photoshop
-          </p>
+        <div class="overlay_row">
+          <div class="overlay_column_title">
+            <p>Technologies</p>
+          </div>
+          <div class="overlay_column_body">
+            <p>The front-end was built with HTML, CSS, and JavaScript. Backend connected using PHP and a MySQL database.
+            Assets were made in Adobe Illustrator or hand drawn in Adobe Photoshop.</p>
+          </div>
         </div>
       </div>
     </div>
+    <!--Found in time-->
+    <div class="section" id="section8">
+      <div class="slide" id="slide1" data-anchor="slide1">
+        <div class="intro">
+          <video controls autoplay muted loop style="width:100%;">
+            <source src="imgs/TessaH_SelfDirected.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="overlay">
+          <h3>FOUND IN TIME - 2D ANIMATION</h3>
+          <div class="overlay_row">
+          <p>Self-Directed 2D film animation project inspired by the theme found in time. I aimed to create a feeling of nostalgia by hand drawing the walk and
+          fly cycle of the paper bag character as well as creating the backgrounds out of craft paper and adding textured layers to give the illusion of age.
+          The sound was designed to add to the nostalgic effect with a gentle jazz tune and clips of crumpling paper, leaves and footsteps.</p>
+        </div>
+          <div class="overlay_row">
+            <div class="overlay_column_title">
+              <p>Technologies</p>
+            </div>
+            <div class="overlay_column_body">
+              <p>Adobe After Effects, Premiere and Photoshop</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
     <div class="section" id="section9">
       <h2>HackConcordia | Director of Design</h2>
       <div class="row" style="width:80%">
@@ -385,8 +437,8 @@
     <div class="social-footer-icons">
       <ul class="menu-simple">
         <li><a href="mailto:tess@hudsonsathome.com"><i class="fa fa-gmail" aria-hidden="false"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/email-sign.png" /></i></a></li>
-        <li><a href="https://www.linkedin.com/in/tess-hudson-9996a7195/"><i class="fa fa-linkedin" aria-hidden="true"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin-circled--v1.png" /></i></a></li>
-        <li><a href="https://github.com/tessa-naia"><i class="fa fa-github" aria-hidden="true"></i><img src="https://img.icons8.com/ios-glyphs/30/ffffff/github.png" /></a></li>
+        <li><a href="https://www.linkedin.com/in/tess-hudson-9996a7195/"><i aria-hidden="true"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin-circled--v1.png" /></i></a></li>
+        <li><a href="https://github.com/tessa-naia"><i aria-hidden="true"></i><img src="https://img.icons8.com/ios-glyphs/30/ffffff/github.png" /></a></li>
       </ul>
     </div>
   </footer>
