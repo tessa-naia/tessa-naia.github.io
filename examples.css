@@ -289,7 +289,7 @@ video::-webkit-media-controls {
 
 .overlay_row {
   display: flex;
-  margin:auto;
+  padding:1%; margin:auto;
   color: white;
 }
 
