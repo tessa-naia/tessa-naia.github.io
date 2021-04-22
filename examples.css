@@ -290,6 +290,8 @@ video::-webkit-media-controls {
 .overlay_row {
   display: flex;
   margin:auto;
+  width: 50%;
+  color: white;
 }
 
 .overlay_column_title {
