@@ -63,7 +63,7 @@ abbr,acronym { border: 0;
 
 body{
 	font-family: arial,helvetica;
-	color: #333;
+	color: red;
 	color: rgba(0,0,0,0.5);
 }
 .loader-wrapper {
@@ -431,7 +431,7 @@ background: rgba(255, 255, 255, 0.2);;
   #AboutText{
     width:100%; float:none;
   }
-  
+
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
