@@ -277,13 +277,8 @@ video::-webkit-media-controls {
   display:none !important;
 }
 .overlay{
-<<<<<<< HEAD
   position:absolute;
   top:55%;
-=======
-  position:relative;
-  top:50%;
->>>>>>> parent of bdb87b8 (Update examples.css)
   left:10%;
   z-index:1;
   width:50%;
