@@ -63,7 +63,7 @@ abbr,acronym { border: 0;
 
 body{
 	font-family: arial,helvetica;
-	color: red;
+	color: #333;
 	color: rgba(0,0,0,0.5);
 }
 .loader-wrapper {
@@ -305,7 +305,7 @@ video::-webkit-media-controls {
 
 .button {
   border: 1.5px solid white;
-  background: none;
+  background: red;
   color: white;
   padding: 15px 15px;
   text-align: center;
