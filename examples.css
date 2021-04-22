@@ -322,6 +322,7 @@ video::-webkit-media-controls {
   font-size: 14px;
   box-shadow: 0 5px 9px 0 black, 0 5px 9px 0 black;
   margin: 1%;
+  display: block;
 }
 .button:hover{
 background: rgba(255, 255, 255, 0.2);;
