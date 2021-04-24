@@ -48,7 +48,7 @@
 
   <div class="topnav" id="myTopnav">
     <a href="#home" id="logo" class="active"><img src="imgs/logo.png" style="height:40px;"></a>
-    <a href="#section1">About</a>
+    <a href="#about">About</a>
     <div class="dropdown">
       <button class="dropbtn">Portfolio
         <i class="fa fa-caret-down"></i>
@@ -65,53 +65,6 @@
     </a>
   </div>
 
-  <!--
-<select id="demosMenu">
-  <option selected>Choose Demo</option>
-  <option id="jquery-adapter">jQuery adapter</option>
-  <option id="active-slide">Active section and slide</option>
-  <option id="auto-height">Auto height</option>
-  <option id="autoplay-video-and-audio">Autoplay Video and Audio</option>
-  <option id="backgrounds">Background images</option>
-  <option id="backgrounds-fixed">Fixed fullscreen backgrounds</option>
-  <option id="background-video">Background video</option>
-  <option id="callbacks-v2-compatible">Callbacks version 2</option>
-  <option id="callbacks-v3">Callbacks version 3</option>
-  <option id="continuous-horizontal">Continuous horizontal</option>
-  <option id="continuous-vertical">Continuous vertical</option>
-  <option id="parallax">Parallax</option>
-  <option id="css3">CSS3</option>
-  <option id="drag-and-move">Drag And Move</option>
-  <option id="easing">Easing</option>
-  <option id="fading-effect">Fading Effect</option>
-  <option id="fixed-headers">Fixed headers</option>
-  <option id="gradient-backgrounds">Gradient backgrounds</option>
-  <option id="interlocked-slides">Interlocked Slides</option>
-  <option id="looping">Looping</option>
-  <option id="methods">Methods</option>
-  <option id="navigation-vertical">Vertical navigation dots</option>
-  <option id="navigation-horizontal">Horizontal navigation dots</option>
-  <option id="navigation-tooltips">Navigation tooltips</option>
-  <option id="no-anchor">No anchor links</option>
-  <option id="normal-scroll">Normal scrolling</option>
-  <option id="normalScrollElements">Normal scroll elements</option>
-  <option id="offset-sections">Offset sections</option>
-  <option id="one-section">One single section</option>
-  <option id="reset-sliders">Reset sliders</option>
-  <option id="responsive-auto-height">Responsive Auto Height</option>
-  <option id="responsive-height">Responsive Height</option>
-  <option id="responsive-width">Responsive Width</option>
-  <option id="responsive-slides">Responsive Slides</option>
-  <option id="scrollBar">Scroll bar enabled</option>
-  <option id="scroll-horizontally">Scroll horizontally</option>
-  <option id="scrollOverflow">Scroll inside sections and slides</option>
-  <option id="scrollOverflow-reset">ScrollOverflow Reset</option>
-  <option id="lazy-load">Lazy load</option>
-  <option id="scrolling-speed">Scrolling speed</option>
-  <option id="trigger-animations">Trigger animations</option>
-  <option id="vue-fullpage">Vue-fullpage component</option>
-</select>
--->
   <div id="fullpage">
     <!--Landing Page-->
     <div class="section" id="home">
@@ -123,20 +76,24 @@
       </div>
     </div>
     <!--About-->
-    <div class="section" id="section1">
+    <div class="section" id="about">
       <img src="imgs/About.jpg" style="width:18%; border-radius:50%; margin-top:1em;">
       <div class="text_block" style="width:75%">
         <h2 id="AboutTitle">Tess Hudson</h2>
         <hr style="color:white;">
         <p id="AboutText">
-          Hi! I’m a 3D artist currently based in Montreal, with a variety of experience in web development as well as 2D design. I am graduating in 2022 with a bachelor’s degree in Computer Science with Computation Arts. I have worked as a graphic
-          designer as well as a web developer and have enjoyed connecting with people in those teams. I am currently competing in the 2021 Ubisoft Game Lab building character and environment models. What I am most importantly interested in is world
-          building whether that be in the realm of film, games, or new technology.<br><br>
-          <b>Software </b> Jira, Blender and Adobe Photoshop, Illustrator, Premiere, After Effects<br>
-          <b>Programming Languages </b> C++/C, Html/CSS/JavaScript, PHP, Java<br>
-          <b>Databases </b> SQLite
-          <b>Libraries </b> OpenGL
+          Hi, I’m Tess, a versatile 3D artist and Software Developer currently based in Montreal. I am passionate in pursuing a career in media industries where I can
+          apply my technical and creative skills to create innovative experiences. I am especially interested in creating 3D immersive environments that transport
+          audiences. I am completing a Bachelor of Computer Science, Major in Computer Applications with Computation Arts in 2022, which allows me to explore a range of
+          creative and interactive projects, focussing on 3D modeling, as well as learning full stack development. My professional experience during my studies include
+          graphic designer and web developer and I have enjoyed working with a variety of teams. I am currently competing in the 2021 Ubisoft Game Lab building character
+          and environment models. What I am most importantly interested in is world building whether that be in the realm of film, games, or new technology.<br><br>
+          <b>SOFTWARE </b> Jira, Blender and Adobe Photoshop, Illustrator, Premiere, After Effects<br>
+          <b>PROGRAMMING LANGUAGES </b> C++/C, Html/CSS/JavaScript, PHP, Java<br>
+          <b>DATABASES </b> SQLite<br>
+          <b>LIBRARIES </b> OpenGL
         </p>
+        
         <br>
         <a href="imgs/TessaH_CV.pdf" style="padding: 5px; text-transform:uppercase; color: #f7f7f7; font-weight: 900;">Resume</a> <br><br>
         <a href="mailto:tess@hudsonsathome.com" style="padding: 10px; text-transform:uppercase; color: #f7f7f7; font-weight: 900;">tess@hudsonsathome.com</a> <br><br>
@@ -151,6 +108,7 @@
           <img src="imgs/Render2.png" style="width:75%;">
         </div>
         <div class="overlay">
+          <h5>GAME | 2021 </h5>
           <h3>Mystic Bond</h3>
           <button class="button"><a href="https://mikesilva13.itch.io/mystic-bond">Play Here</a></button>
           <div id="description" class="overlay_row">
@@ -213,6 +171,7 @@
           </video>
         </div>
         <div class="overlay">
+          <h5>3D PRODUCTION | 2020 </h5>
           <h3>Lipsync Animation</h3>
           <div id="description" class="overlay_row">
             This animation takes an elderly man’s face inspired by the concept art by Roman Semenenko to animate as it is a more interesting textural and visual basis
@@ -252,8 +211,12 @@
         </video>
       </div>
       <div class="overlay">
+        <h5>3D PRODUCTION | 2021 </h5>
         <h3>Pulmonem</h3>
-        <button class="button"><a href="https://linakretzsch.github.io/Pulmonem/?fbclid=IwAR3stqLD8Ft4yIKMMY3BT0Xfd1nxRMT2eapPkSgzXSSC1EcwsYfp-qGzeac#0">See More</a></button>
+        <div style="inline">
+          <button class="button"><a href="https://linakretzsch.github.io/Pulmonem/?fbclid=IwAR3stqLD8Ft4yIKMMY3BT0Xfd1nxRMT2eapPkSgzXSSC1EcwsYfp-qGzeac#0">See More</a></button>
+          <button class="button"><a href="https://lens.snapchat.com/35a8735d78d14409adf325ef2acbad6c">AR Filter</a></button>
+        </div>
         <div id="description" class="overlay_row">
           Pulmonem imagines a world in which the pollution of the air has become so toxic that a underground organization needs to develop an external lung in order to survive.
         </div>
@@ -283,6 +246,7 @@
           <img src="imgs/teamstalagmite-render-left_orig.png" style="width:90%; margin:auto; padding-bottom:0;">
         </div>
         <div class="overlay">
+          <h5>3D PRODUCTION | 2018 </h5>
           <h3>Low-Poly Environment</h3>
           <!--<button class="button"><a href="#">See More</a></button>-->
           <div id="description" class="overlay_row">
@@ -295,7 +259,7 @@
               Collaborators
             </div>
             <div class="overlay_column_body">
-            Charles Rabbat
+              Charles Rabbat
             </div>
           </div>
           <div class="overlay_row">
@@ -327,27 +291,28 @@
     <div class="section" id="section6">
       <div class="slide" id="slide1" data-anchor="slide1">
         <video controls autoplay muted loop style="width:100%; margin: auto;">
-          <source src="imgs/TessaH_Monster_ANI.mp4" type="video/mp4">
+          <source src="imgs/Monster.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
-      <div class="overlay">
-        <h3>Monster</h3>
-        <div id="description" class="overlay_row">
-        This organic model showcases my skill in realistic texturing and rigging. This creature’s textures are a combination of frogs, bats, deer, rhinos and geckos, blended together using texture, specular and bump maps. The model was rigged in
-        Blender with a fly cycle with attention to realism and with extra animations like blinking to give the model even more life. This model was lit using environment lighting and an HDR image so that you can see the reflection of the
-        environment in the eye as well as the light bounce off the monster’s skin especially under the wings.
-      </div>
-        <div class="overlay_row">
-          <div class="overlay_column_title">
-            Technologies
+        <div class="overlay">
+          <h5>3D PRODUCTION | 2018 </h5>
+          <h3>Monster</h3>
+          <div id="description" class="overlay_row">
+            This organic model showcases my skill in realistic texturing and rigging. This creature’s textures are a combination of frogs, bats, deer, rhinos and geckos, blended together using texture, specular and bump maps. The model was rigged in
+            Blender with a fly cycle with attention to realism and with extra animations like blinking to give the model even more life. This model was lit using environment lighting and an HDR image so that you can see the reflection of the
+            environment in the eye as well as the light bounce off the monster’s skin especially under the wings.
           </div>
-          <div class="overlay_column_body">
-            Blender, Adobe Photoshop
+          <div class="overlay_row">
+            <div class="overlay_column_title">
+              Technologies
+            </div>
+            <div class="overlay_column_body">
+              Blender, Adobe Photoshop
+            </div>
           </div>
         </div>
       </div>
-    </div>
-<!--
+      <!--
       <div class="slide" id="slide2" data-anchor="slide2">
         <div class="row" style="width:70%;">
           <div class="column">
@@ -366,6 +331,7 @@
         <img src="imgs/WorldArtificerMockup.png" style="width:80%; float:right;">
       </div>
       <div class="overlay">
+        <h5>WEB DEVELOPMENT | 2019 </h5>
         <h3>World Artificer</h3>
         <button class="button"><a href="https://hybrid.concordia.ca/T_HUDSON/FinalProjectLogin/PHPScripts/ajaxRegisterUser.php">See More</a></button>
         <div class="overlay_row" id="description">
@@ -394,7 +360,8 @@
           </video>
         </div>
         <div class="overlay">
-          <h3>FOUND IN TIME - 2D ANIMATION</h3>
+          <h5>2D ANIMATION | 2019 </h5>
+          <h3>FOUND IN TIME</h3>
           <div class="overlay_row" id="description">
             Self-Directed 2D film animation project inspired by the theme found in time. I aimed to create a feeling of nostalgia by hand drawing the walk and
             fly cycle of the paper bag character as well as creating the backgrounds out of craft paper and adding textured layers to give the illusion of age.
@@ -411,7 +378,7 @@
         </div>
       </div>
     </div>
-<!--
+    <!--
     <div class="section" id="section9">
 
       <div class="row" style="width:80%">
@@ -455,7 +422,7 @@
     </div>
   -->
   </div>
-</div>
+  </div>
   <footer class="social-footer">
     <div class="social-footer-left">
 
@@ -479,7 +446,15 @@
       navigationTooltips: [],
       showActiveTooltip: true,
       menu: '#menu',
-      scrollOverflow: true
+      scrollOverflow: true,
+      continuousVertical: true,
+      afterLoad: function(anchorLink, index) {
+        console.log("AFTER LOAD - anchorLink:" + anchorLink + " index:" + index);
+      },
+      onLeave: function(index, nextIndex, direction) {
+        console.log("ONLEAVE - index:" + index + " nextIndex:" + nextIndex + " direction:" + direction);
+
+      },
     });
   </script>
 

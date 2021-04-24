@@ -110,6 +110,9 @@ body{
 h1{
 	font-size: 6em;
 }
+h5{
+	padding:2%;
+}
 p{
 	font-size: 1em;
   color: #f7f7f7;
@@ -324,7 +327,7 @@ video::-webkit-media-controls {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  display: inline-block;
+  display: inline;
   font-size: 14px;
   box-shadow: 0 5px 9px 0 black, 0 5px 9px 0 black;
   margin: 1% 2%;
@@ -421,7 +424,7 @@ background: rgba(255, 255, 255, 0.2);;
   }
 
   .overlay_row {
-    display: flex;
+    display:block;
     margin:auto;
   }
 
