@@ -208,11 +208,13 @@ z-index: 70;
   color: black;
 }
 /* Add a dark background on topnav links and the dropdown button on hover */
-.topnav a:hover, .dropdown:hover .dropbtn {
+.topnav a:hover {
   color: white;
   border-bottom: 1px solid white;
 }
-
+#logo:hover{
+  border:hidden;
+}
 /* Show the dropdown menu on hover*/
 .dropdown:hover .dropdown-content {
   display: block;
