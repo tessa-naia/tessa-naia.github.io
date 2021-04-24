@@ -193,7 +193,7 @@ z-index: 70;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-   transition: height 2s;
+  transition: height 2s;
 }
 
 /* Style the links inside the dropdown */
@@ -207,7 +207,7 @@ z-index: 70;
 }
 /* Add a grey background to dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #969696;
   color: black;
 }
 /* Add a dark background on topnav links and the dropdown button on hover */
@@ -329,13 +329,13 @@ video::-webkit-media-controls {
   font-weight: bold;
   display: inline;
   font-size: 14px;
-  box-shadow: 0 5px 9px 0 black, 0 5px 9px 0 black;
-  margin: 1% 2%;
-  display: block;
+  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.5), 0 5px 9px 0 rgba(0, 0, 0, 0.5);
+  margin: 2% 0 1% 2% ;
+  display: inline;
   float:none;
 }
 .button:hover{
-background: rgba(255, 255, 255, 0.2);;
+background: rgba(255, 255, 255, 0.2);
 }
 .button a{color:white;}
 
