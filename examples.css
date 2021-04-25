@@ -49,7 +49,8 @@ h3{
   text-transform: uppercase;
   font-weight: bold;
   text-align: left;
-  padding-left: 2%
+  padding-left: 2%;
+  letter-spacing: 10px;
 }
 q:before,q:after {
     content:'';
@@ -109,7 +110,28 @@ body{
 
 h1{
 	font-size: 6em;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 0.4em;
 }
+#title {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  color: #FFF;
+  z-index:4;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "lato", sans-serif;
+  font-weight: 100;
+  font-size:4em;
+  letter-spacing: 20px;
+  margin-top: -60px;
+  padding-left: 10px;
+}
+
+
 h5{
 	padding:2%;
 }
@@ -178,7 +200,7 @@ z-index: 70;
   font-size: 16px;
   border: none;
   outline: none;
-  color: #a1a1a1;
+  color: white;
   text-transform: uppercase;
   padding: 14px 16px;
   background-color: inherit;
@@ -193,7 +215,7 @@ z-index: 70;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  transition: height 2s;
+  transition: all .5s ease;
 }
 
 /* Style the links inside the dropdown */
@@ -221,6 +243,7 @@ z-index: 70;
 /* Show the dropdown menu on hover*/
 .dropdown:hover .dropdown-content {
   display: block;
+  transform: translateY(0);
 }
 
 .text_block{
@@ -232,6 +255,7 @@ z-index: 70;
 }
 #myVideo{
   position: absolute;
+  opacity: 75%;
   right: 0;
   bottom: 0;
   top:0;
@@ -284,7 +308,7 @@ video::-webkit-media-controls {
 .overlay{
   position:absolute;
   bottom:10%;
-  left:10%;
+  left:7%;
   z-index:1;
   width:50%;
   display:block;
@@ -345,6 +369,7 @@ background: rgba(255, 255, 255, 0.2);
   font-weight: bold;
   font-size: 3em;
   margin:0;
+  letter-spacing: 10px;
 }
 #AboutText{
   width:70%; float: right;
