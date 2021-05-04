@@ -48,7 +48,7 @@
   </script>
 
   <div class="topnav" id="myTopnav">
-    <a href="#home" id="logo" class="active"><img src="imgs/logo.png" style="height:40px;"></a>
+    <a href="#section0" id="logo" class="active"><img src="imgs/logo.png" style="height:40px;"></a>
     <a href="#about">About</a>
     <div class="dropdown">
       <button class="dropbtn">Portfolio
@@ -68,7 +68,7 @@
 
   <div id="fullpage">
     <!--Landing Page-->
-    <div class="section" id="home">
+    <div class="section" id="section0">
       <div class="intro">
         <video id="myVideo" loop muted data-autoplay>
           <source src="imgs/DemoReel.mp4" type="video/mp4">
@@ -85,28 +85,55 @@
       </div>
     </div>
     <!--About Green:#495c56;-->
-    <div class="section" id="about" style="background-color:#333333;">
-      <img src="imgs/About.jpg" style="width:18%; border-radius:50%; margin-top:1em;">
-      <div class="text_block" style="width:75%">
+    <div class="section" id="about" style="background-color:#1f1f1f">
+      <img src="imgs/About.jpg" id="AboutImage">
+      <div class="row" id="AboutBody">
         <h2 id="AboutTitle">Tess Hudson</h2>
-        <hr style="color:white;">
-        <p id="AboutText">
-          Hi, I’m Tess, a versatile 3D artist and Software Developer currently based in Montreal. I am passionate in pursuing a career in media industries where I can
-          apply my technical and creative skills to create innovative experiences. I am especially interested in creating 3D immersive environments that transport
-          audiences. I am completing a Bachelor of Computer Science, Major in Computer Applications with Computation Arts in 2022, which allows me to explore a range of
-          creative and interactive projects, focussing on 3D modeling, as well as learning full stack development. My professional experience during my studies include
-          graphic designer and web developer and I have enjoyed working with a variety of teams. I am currently competing in the 2021 Ubisoft Game Lab building character
-          and environment models. What I am most importantly interested in is world building whether that be in the realm of film, games, or new technology.<br><br>
-          <b>SOFTWARE </b> Jira, Blender and Adobe Photoshop, Illustrator, Premiere, After Effects<br>
-          <b>PROGRAMMING LANGUAGES </b> C++/C, Html/CSS/JavaScript, PHP, Java<br>
-          <b>DATABASES </b> SQLite<br>
-          <b>LIBRARIES </b> OpenGL
-        </p>
-        <br>
-        <a href="imgs/TessaH_CV.pdf" style="padding: 5px; text-transform:uppercase; color: #f7f7f7; font-weight: 900;">Resume</a> <br><br>
-        <a href="mailto:tess@hudsonsathome.com" style="padding: 10px; text-transform:uppercase; color: #f7f7f7; font-weight: 900;">tess@hudsonsathome.com</a> <br><br>
-        <a href="https://www.linkedin.com/in/tess-hudson-9996a7195/"><i aria-hidden="true"><img src="https://img.icons8.com/ios-glyphs/30/ffffff/linkedin-circled--v1.png" /></i></a>
-
+        <hr style="color:white; margin-top:10px; ">
+        <div class="column" id="AboutText" >
+            Hi, I’m Tess, a versatile 3D artist and Software Developer currently based in Montreal. I am passionate in pursuing a career in media industries where I can
+            apply my technical and creative skills to create innovative experiences. I am especially interested in creating 3D immersive environments that transport
+            audiences. I am completing a Bachelor of Computer Science, Major in Computer Applications with Computation Arts in 2022, which allows me to explore a range of
+            creative and interactive projects, focussing on 3D modeling, as well as learning full stack development. My professional experience during my studies include
+            graphic designer and web developer and I have enjoyed working with a variety of teams. I am currently competing in the 2021 Ubisoft Game Lab building character
+            and environment models. What I am most importantly interested in is world building whether that be in the realm of film, games, or new technology.
+        </div>
+        <div class="column" style="flex: 30%; text-align:left;">
+          <button class="button"><a href="imgs/TessaH_CV.pdf">Resume</a></button>
+          <button class="button"><a href="mailto:tess@hudsonsathome.com">tess@hudsonsathome.com</a></button>
+          <div class="overlay_row">
+            <div class="overlay_column_title">
+              Software
+            </div>
+            <div class="overlay_column_body">
+              Jira, Blender and Adobe Photoshop, Illustrator, Premiere, After Effects
+            </div>
+          </div>
+          <div class="overlay_row">
+            <div class="overlay_column_title">
+              Programming Languages
+            </div>
+            <div class="overlay_column_body">
+              C++/C, Html/CSS/JavaScript, PHP, Java
+            </div>
+          </div>
+          <div class="overlay_row">
+            <div class="overlay_column_title">
+              Databases
+            </div>
+            <div class="overlay_column_body">
+              SQLite
+            </div>
+          </div>
+          <div class="overlay_row">
+            <div class="overlay_column_title">
+              Libraries
+            </div>
+            <div class="overlay_column_body">
+              OpenGL
+            </div>
+          </div>
+      </div>
       </div>
     </div>
     <!--Game-->
@@ -245,8 +272,8 @@
     </div>
     <!--LowPoly-->
     <div class="section" id="section5" style="background-color:#474747;">
-
-      <div class="slide" id="slide1" data-anchor="slide1" style="background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('imgs/teamstalagmite-render-left_orig.png');background-position: center;background-repeat: no-repeat; background-size: cover;">
+      <div class="slide" id="slide1" data-anchor="slide1"
+        style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('imgs/teamstalagmite-render-left_orig.png');background-position: center;background-repeat: no-repeat; background-size: cover;">
         <div class="overlay">
           <h5>3D PRODUCTION | 2018 </h5>
           <h3>Low-Poly Environment</h3>
@@ -329,7 +356,8 @@
     </div>
 
     <div class="section" id="section7" style="background-color:#5d5d5d;">
-      <div class="slide" id="slide1" data-anchor="slide1" style="background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url('imgs/WorldArtificerMockup.png'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+      <div class="slide" id="slide1" data-anchor="slide1"
+        style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('imgs/WorldArtificerMockup.png'); background-position: center; background-repeat: no-repeat; background-size: cover;">
         <div class="overlay">
           <h5>WEB DEVELOPMENT | 2019 </h5>
           <h3>World Artificer</h3>
@@ -442,10 +470,9 @@
   <script type="text/javascript" src="examples.js"></script>
   <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
-      anchors: ['firstPage', 'secondPage', '3rdPage'],
+      anchors: [],
       navigation: true,
-      navigationTooltips: [],
-      showActiveTooltip: true,
+      navigationTooltips: ['Home', 'About', 'Mystic Bond', 'Lipsync Animation', 'Pulmonem', 'Low-Poly Environment', 'Monster Model', 'World Artificer', 'Found in Time'],
       menu: '#menu',
       scrollOverflow: true,
       continuousVertical: true,

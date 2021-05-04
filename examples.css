@@ -296,14 +296,6 @@ fp-nav{color:white;}
   transform: translateY(0);
 }
 
-.text_block {
-  padding: 0 5%;
-  width: 65%;
-  display: block;
-  margin-left: 10%;
-  float: left;
-}
-
 .slide {
   background-position: center;
   background-repeat: no-repeat;
@@ -439,6 +431,13 @@ video::-webkit-media-controls {
 }
 
 /*About*/
+#about img {
+  width:18%; border-radius:50%; margin-top:20px;
+}
+#AboutBody{
+width:80%;
+margin-bottom:5%;
+}
 #AboutTitle {
   text-align: left;
   font-weight: bold;
@@ -448,8 +447,9 @@ video::-webkit-media-controls {
 }
 
 #AboutText {
-  width: 70%;
-  float: right;
+  flex: 60%; float: left;
+  text-align:left;
+  color:white;
 }
 
 /*Gallery alignment*/
@@ -509,7 +509,7 @@ video::-webkit-media-controls {
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   h5 {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   h3 {
@@ -529,7 +529,7 @@ video::-webkit-media-controls {
   }
 
   .topnav {
-    background-color: #333;
+    background-color: #1f1f1f;
   }
 
   .topnav a:not(:first-child), .dropdown .dropbtn {
@@ -542,6 +542,26 @@ video::-webkit-media-controls {
     float: right;
     display: block;
   }
+  #about{
+    font-size: 0.8em;
+  }
+  #about img{
+    width:40%;
+    margin-top: 60px;
+  }
+  #about .button{float:none; }
+  #AboutBody{
+    margin-bottom:25%;
+  }
+  #AboutTitle {
+    text-align: left;
+    font-weight: bold;
+    font-size: 2em;
+  }
+  #AboutText {
+
+  }
+  #aboutLinkedin{visibility: hidden;}
   .overlay {
     z-index: 4;
     width: 75%;
@@ -553,36 +573,27 @@ video::-webkit-media-controls {
     font-size: 0.75em;
   }
   .overlay_row {
-    display: block;
     margin: auto;
   }
   .overlay_column_title {
-    flex: 20%;
+    flex: 100%;
     float: left;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 0;
+    padding:0 10px 0 0;
     margin: 0;
   }
   .overlay_column_body {
-    flex: 80%;
+    flex: 100%;
     float: left;
     padding: 0;
     margin: 0;
   }
-  #AboutTitle {
-    text-align: left;
-    font-weight: bold;
-    font-size: 2em;
-  }
-  #AboutText {
-    width: 100%;
-    float: none;
-  }
+
   .social-footer {
     bottom: 0;
     height: 55px;
-    background-color: #333;
+    background-color: #1f1f1f;
   }
 }
 
